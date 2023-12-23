@@ -2,7 +2,7 @@ name: Auto EUserv
 
 on:
   schedule:
-    - cron: '0 12 * * SUN'  # 每周日 UTC 时间 12:00 运行
+    - cron: '0 0 12 */25 * * *'  # 每25天的中午12点触发一次/运行/执行
   workflow_dispatch:
 
 jobs:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     
     environment: 
-      name: euex
+      name: Auto EUserv
 
     steps:
     - name: Checkout repository
