@@ -2,7 +2,7 @@ name: Auto EUserv
 
 on:
   schedule:
-    - cron: '0 12 */25 * * *'  # 每25天的中午12点触发一次/运行/执行
+    - cron: '0 12 */25 * *'  # 每25天的中午12点触发一次/运行/执行
   workflow_dispatch:
 
 jobs:
